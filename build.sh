@@ -366,7 +366,7 @@ case $TASK in
         ;;
     run)
         shift
-        if [ $# -le 1 ]; then
+        if [ $# -le 0 ]; then
             print_examples
         fi
         cmd=$1
