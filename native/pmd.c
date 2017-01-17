@@ -132,7 +132,7 @@ int init_pmd_port(int port, int rxqs, int txqs, int rxq_core[], int txq_core[], 
 
     eth_rxconf = dev_info.default_rxconf;
     /* Drop packets when no descriptors are available */
-    eth_rxconf.rx_drop_en = 1;
+    eth_rxconf.rx_drop_en = 0;
 
     eth_txconf = dev_info.default_txconf;
     tso = !(!tso);
